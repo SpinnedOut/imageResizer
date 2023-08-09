@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <h1>Image Resizer</h1>
+      <input type="file" id="fileInput" />
+      <div class="image-settings">
+        <label for="width">Width:</label>
+        <input type="number" id="width" />
+        <label for="height">Height:</label>
+        <input type="number" id="height" />
+        <button id="resizeButton">Resize</button>
+      </div>
+      <div id="originalDimensions">Original Dimensions: - x -</div>
+      <div id="originalDimensions">Original Dimensions: - x -</div>
+      <div class="preview-box">
+        <img id="imagePreview" src="" alt="Image Preview" />
+      </div>
+      <div class="format-selection">
+        <label for="formatSelector">Select Format:</label>
+        <select id="formatSelector">
+          <option value="image/jpeg">JPEG</option>
+          <option value="image/png">PNG</option>
+          <option value="image/gif">GIF</option>
+        </select>
+      </div>
+      <button id="downloadButton" disabled>Download</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pica/6.1.1/pica.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
